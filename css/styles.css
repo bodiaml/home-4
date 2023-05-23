@@ -1,0 +1,381 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+:root {
+  --accent-color: #404bbf;
+}
+
+img {
+  display: block;
+}
+
+li {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/*======================================Heder================================*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  height: 72px;
+}
+
+.header-container {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  height: 72px;
+  padding: 0 15px;
+}
+
+.addressa {
+  font-style: normal;
+}
+
+.contacts {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 332px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  margin: 0;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  flex-direction: row;
+  padding: 0px;
+  margin-right: 76px;
+}
+
+.studio {
+  color: #2e2f42;
+}
+.web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.studio-menu {
+  padding: 24px 0;
+}
+
+.menu-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.address {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/*===============================/Main=============================*/
+
+.hero {
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
+
+.hero-image {
+  font-family: "Roboto", sans-serif;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0 auto;
+
+  max-width: 496px;
+}
+
+.order-bt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: white;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.order-bt:hover,
+.order-bt:focus {
+  background-color: #404bbf;
+}
+
+/* ===================== SECTION TWO =================== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-two {
+  padding: 120px 0;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.feature-container {
+  padding: 0 15px;
+}
+
+.feature {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.text-feat {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
+}
+
+.our-features {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+/*===================What are we doing=======================*/
+
+.section-three {
+  padding-bottom: 120px;
+}
+.titles {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.img-doing {
+  display: flex;
+  gap: 24px;
+  padding-left: 0%;
+  margin: 0%;
+}
+
+.title-doing {
+  margin-top: 0%;
+  margin-bottom: 72px;
+}
+
+.img-doing-item {
+  width: calc((100% - 48px) / 3);
+}
+
+/*====================Our Team====================*/
+
+.section-four {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.our-team-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+.name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.team {
+  margin-left: auto;
+}
+
+.profession {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+  margin: 0;
+}
+
+.img-team {
+  display: flex;
+  margin: 0;
+  gap: 24px;
+  padding: 0;
+}
+
+.name-prof {
+  background-color: #ffffff;
+  width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.name-container {
+  padding: 32px 16px;
+}
+/*======================Footer===================*/
+
+.footer {
+  background: #2e2f42;
+  padding: 100px 0;
+}
+
+.text-foot {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+  margin: 0;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: inline-block;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-bottom: 16px;
+}
+
+.studio-footer {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+
+/*================================ Hover/Focus===========================*/
+.addr-port:hover,
+.addr-port:focus {
+  color: #404bbf;
+}
+.address:hover,
+.address:focus {
+  color: #404bbf;
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  color: #404bbf;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+.studio-menu:hover,
+.studio-menu:focus {
+  color: #404bbf;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: #404bbf;
+}
