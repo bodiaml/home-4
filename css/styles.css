@@ -41,6 +41,8 @@ li {
 .header {
   border-bottom: 1px solid #e7e9fc;
   height: 72px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -142,6 +144,8 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .hero-image {
@@ -202,6 +206,9 @@ li {
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
 }
 
@@ -324,6 +331,8 @@ li {
   background-color: #ffffff;
   width: calc((100%-72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name-container {
@@ -333,16 +342,40 @@ li {
 .icon-team-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.icon-team-item {
+  width: 40px;
+  height: 40px;
 }
 
 .icon-team-link {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-team-link:hover,
+.icon-team-link:focus {
+  background-color: #404bbf;
+}
+
+.icon-item {
+  fill: #f4f4fd;
 }
 
 /*======================== Company SVG=====================*/
 
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .svg-list {
   display: flex;
   margin: 0;
@@ -351,23 +384,37 @@ li {
 }
 
 .svg-item {
-}
-
-.svg-container {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
-  margin-bottom: 0;
 }
 
-.customers-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.link-cost {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+
+.link-cost:hover,
+.link-cost:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.icon-customers {
+  fill: currentColor;
 }
 
 .cust-title {
   text-align: center;
   margin-top: 0;
   margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
 }
 /*======================Footer===================*/
 
@@ -376,6 +423,14 @@ li {
   padding: 100px 0;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-text-footer {
+  margin-right: 120px;
+}
 .text-foot {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -409,6 +464,46 @@ li {
   color: #f4f4fd;
 }
 
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.icon-footer-list {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-footer-item {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon-footer-link:hover,
+.icon-footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.icon-footer {
+  fill: #f4f4fd;
+}
 /*================================ Hover/Focus===========================*/
 .addr-port:hover,
 .addr-port:focus {
