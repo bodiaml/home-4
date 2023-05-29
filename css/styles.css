@@ -409,8 +409,13 @@ li {
   border-color: #404bbf;
   color: #404bbf;
 }
+
 .icon-customers {
   fill: currentColor;
+}
+
+.icon-customers:hover {
+  color: #404bbf;
 }
 
 .cust-title {
