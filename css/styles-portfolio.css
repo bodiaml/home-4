@@ -263,6 +263,15 @@ img {
   color: #f4f4fd;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-text-footer {
+  margin-right: 120px;
+}
+
 .social-media {
   font-weight: 500;
   font-size: 16px;
@@ -302,7 +311,7 @@ img {
 }
 
 .icon-footer {
-  fill: #f4f4fd;
+  fill: var(--icon-color, #f4f4fd);
 }
 /*================================ Hover/Focus===========================*/
 .addr-port:hover,

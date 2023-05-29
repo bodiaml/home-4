@@ -366,8 +366,8 @@ li {
   background-color: #404bbf;
 }
 
-.icon-item {
-  fill: #f4f4fd;
+.icon-team {
+  fill: var(--icon-color, #f4f4fd);
 }
 
 /*======================== Company SVG=====================*/
@@ -376,6 +376,11 @@ li {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.customers-container {
+  padding: 0 15px;
+}
+
 .svg-list {
   display: flex;
   margin: 0;
@@ -503,8 +508,9 @@ li {
 }
 
 .icon-footer {
-  fill: #f4f4fd;
+  fill: var(--icon-color, #f4f4fd);
 }
+
 /*================================ Hover/Focus===========================*/
 .addr-port:hover,
 .addr-port:focus {
